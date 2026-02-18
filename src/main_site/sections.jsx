@@ -4,7 +4,7 @@ import { FaGithub, FaReddit, FaXbox } from "react-icons/fa";
 import { SiRoblox } from "react-icons/si";
 import { TbBrandMinecraft } from "react-icons/tb";
 
-import { SocialButton, RedirectButton } from "./buttons";
+import { SocialButton, RedirectButton } from "../shared/buttons";
 
 export function MainLinks() {
     return (
@@ -62,8 +62,4 @@ export function SpotifyPlaylist() {
             </div>
         </div>
     );
-}
-
-export function Bottom() {
-    return <sub>Copyright © 2026 Wdboyes13. All rights reserved.</sub>;
 }

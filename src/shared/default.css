@@ -3,15 +3,6 @@
     text-align: center;
 }
 
-.card-container {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1em;
-    padding: 1em;
-}
-
 button {
     height: 50px;
     width: 100%;
@@ -21,11 +12,6 @@ hr {
     width: 105%;
 }
 
-.icon {
-    color: white;
-    fill: white;
-}
-
 ul {
     display: inline-block;
     text-align: left;
@@ -33,9 +19,23 @@ ul {
     list-style-position: inside;
 }
 
+.card-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1em;
+    padding: 1em;
+}
+
 .about-container {
     display: inline-block;
     text-align: left;
     max-width: 600px;
     width: 100%;
+}
+
+.icon {
+    color: white;
+    fill: white;
 }

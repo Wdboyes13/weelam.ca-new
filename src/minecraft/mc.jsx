@@ -1,6 +1,6 @@
-import "./App.css";
-import { RedirectButton } from "./buttons";
-import { Bottom } from "./sections";
+import { RedirectButton } from "../shared/buttons";
+import "../shared/default.css";
+import { Footer } from "../shared/footer";
 
 export default function Minecraft() {
     return (
@@ -27,7 +27,7 @@ export default function Minecraft() {
                 We can't get a custom IP since Playit charges more than my
                 entire domain costs <br />
             </sub>
-            <Bottom />
+            <Footer />
         </>
     );
 }

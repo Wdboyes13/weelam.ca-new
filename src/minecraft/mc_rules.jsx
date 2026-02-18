@@ -1,5 +1,5 @@
-import "./App.css";
-import { Bottom } from "./sections";
+import "../shared/default.css";
+import { Footer } from "../shared/footer";
 
 export default function MinecraftRules() {
     return (
@@ -17,7 +17,7 @@ export default function MinecraftRules() {
                 </ol>
             </div>
             <hr />
-            <Bottom />
+            <Footer />
         </>
     );
 }

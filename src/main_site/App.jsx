@@ -1,5 +1,6 @@
-import "./App.css";
-import { MainLinks, Socials, SpotifyPlaylist, Bottom } from "./sections";
+import "../shared/default.css";
+import { Footer } from "../shared/footer";
+import { MainLinks, Socials, SpotifyPlaylist } from "./sections";
 import { MdWavingHand } from "react-icons/md";
 
 export default function App() {
@@ -39,7 +40,7 @@ export default function App() {
             <hr />
             <SpotifyPlaylist />
             <hr />
-            <Bottom />
+            <Footer />
         </>
     );
 }
