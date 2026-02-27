@@ -1,0 +1,28 @@
+@mixin grad($style: "long", $gradname: gradientShift, $clip: false) {
+    background: linear-gradient(
+        90deg,
+        #4f8cff,
+        #8b5cf6,
+        #4f8cff
+    );
+    will-change: background-position;
+
+    @if $style == "long" {
+        background-size: 200% 100%;
+        animation: $gradname 3s ease-in-out infinite;
+    } @else if $style == "small" {
+        background-size: auto 200%;
+        animation: $gradname 3s linear infinite;
+    }
+
+    @if $clip {
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+        animation: none;
+        background-position: 50% 50%;
+    }
+}
