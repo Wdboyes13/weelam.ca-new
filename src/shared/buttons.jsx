@@ -1,6 +1,9 @@
-export function RedirectButton({ children, location }) {
+import './social_button.css'
+
+export function RedirectButton({ children, location, ...props }) {
     return (
         <button
+            {...props}
             onClick={() => {
                 window.location.href = location;
             }}
@@ -13,21 +16,9 @@ export function RedirectButton({ children, location }) {
 export function SocialButton({ children, location }) {
     return (
         <button
+            className="socialButton"
             onClick={() => {
                 window.location.href = location;
-            }}
-            style={{
-                width: "48px",
-                height: "48px",
-                borderRadius: "50%",
-                background: "#1a1a1a",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                cursor: "pointer",
-                fontSize: "18px",
-                color: "white",
-                padding: 0,
             }}
         >
             {children}

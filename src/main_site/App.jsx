@@ -3,11 +3,13 @@ import { Footer } from "../shared/footer";
 import { MainLinks, Socials, SpotifyPlaylist } from "./sections";
 import { MdWavingHand } from "react-icons/md";
 
+import './App.css'
+
 export default function App() {
     return (
         <>
             <h1>
-                Hey! My name is william <MdWavingHand />
+                Hey! My name is <span id="name">William</span> <MdWavingHand />
             </h1>
             <div className="about-container">
                 <p>
