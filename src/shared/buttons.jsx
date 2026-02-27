@@ -1,5 +1,3 @@
-import './social_button.css'
-
 export function RedirectButton({ children, location, ...props }) {
     return (
         <button
