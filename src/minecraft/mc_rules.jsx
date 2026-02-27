@@ -1,4 +1,3 @@
-import "../shared/default.css";
 import { Footer } from "../shared/footer";
 
 export default function MinecraftRules() {

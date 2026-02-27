@@ -1,13 +1,12 @@
-import "../shared/default.css";
 import { Footer } from "../shared/footer";
 import { MainLinks, Socials, SpotifyPlaylist } from "./sections";
 import { MdWavingHand } from "react-icons/md";
 
-import './App.css'
+import './App.scss'
 
 export default function App() {
     return (
-        <>
+        <div className="site-container">
             <h1>
                 Hey! My name is <span id="name">William</span> <MdWavingHand />
             </h1>
@@ -43,6 +42,6 @@ export default function App() {
             <SpotifyPlaylist />
             <hr />
             <Footer />
-        </>
+        </div>
     );
 }

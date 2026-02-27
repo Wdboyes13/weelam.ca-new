@@ -1,5 +1,3 @@
-import "./shared/default.css";
-
 export default function License() {
     return (
         <div

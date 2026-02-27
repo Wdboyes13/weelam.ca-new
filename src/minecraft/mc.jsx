@@ -1,10 +1,9 @@
 import { RedirectButton } from "../shared/buttons";
-import "../shared/default.css";
 import { Footer } from "../shared/footer";
 
 export default function Minecraft() {
     return (
-        <>
+        <div className="site-container">
             <h1>Welcome to SilqCraft</h1>
             <div className="card-container">
                 <RedirectButton location="/minecraft/rules">
@@ -28,6 +27,6 @@ export default function Minecraft() {
                 entire domain costs <br />
             </sub>
             <Footer />
-        </>
+        </div>
     );
 }
