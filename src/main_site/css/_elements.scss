@@ -1,16 +1,15 @@
 @use '../../css/vars' as *;
-@use 'mixins' as *;
-@use 'animations' as *;
+@use 'gradient' as *;
 
 #name {
     @include grad($clip: true);
 }
 
-.sphoreBtn:hover {
+.sphore-button:hover {
     @include grad;
 }
 
-.socialButton {
+.social-button {
     width: 48px;
     height: 48px;
     border-radius: 50%;
@@ -23,7 +22,7 @@
     color: white;
     padding: 0;
     &:hover {
-        @include grad("small", sbtnHoverGrad)
+        @include grad;
     }
 }
 

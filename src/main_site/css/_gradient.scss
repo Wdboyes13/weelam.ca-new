@@ -1,4 +1,4 @@
-@mixin grad($style: "long", $gradname: gradientShift, $clip: false) {
+@mixin grad($clip: false) {
     background: linear-gradient(
         90deg,
         #4f8cff,
@@ -7,13 +7,8 @@
     );
     will-change: background-position;
 
-    @if $style == "long" {
-        background-size: 200% 100%;
-        animation: $gradname 3s ease-in-out infinite;
-    } @else if $style == "small" {
-        background-size: auto 200%;
-        animation: $gradname 3s linear infinite;
-    }
+    background-size: 200% 100%;
+    animation: gradient-shift 3s ease-in-out infinite;
 
     @if $clip {
         -webkit-background-clip: text;
@@ -25,4 +20,10 @@
         animation: none;
         background-position: 50% 50%;
     }
+}
+
+@keyframes gradient-shift {
+    0%   { background-position: 0% 50%; }
+    50%  { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
 }

@@ -9,7 +9,7 @@ import { SocialButton, RedirectButton } from "../shared/buttons";
 export function MainLinks() {
     return (
         <div className="card-container">
-            <RedirectButton className="sphoreBtn" location="/sphore/index.html">
+            <RedirectButton className="sphore-button" location="/sphore/index.html">
                 Here's a cool sphere!
             </RedirectButton>
         </div>

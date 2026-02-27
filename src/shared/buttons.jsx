@@ -14,7 +14,7 @@ export function RedirectButton({ children, location, ...props }) {
 export function SocialButton({ children, location }) {
     return (
         <button
-            className="socialButton"
+            className="social-button"
             onClick={() => {
                 window.location.href = location;
             }}
