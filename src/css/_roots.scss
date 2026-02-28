@@ -1,4 +1,4 @@
-@use 'vars' as *;
+@use 'colours' as *;
 
 :root {
     font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -6,8 +6,8 @@
     font-weight: 400;
 
     color-scheme: light dark;
-    color: $color-text;
-    background-color: $color-bg;
+    color: var(--color-text);
+    background-color: var(--color-bg);
 
     font-synthesis: none;
     text-rendering: optimizeLegibility;

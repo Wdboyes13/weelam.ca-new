@@ -1,6 +1,6 @@
 import { LuSwords } from "react-icons/lu";
 import { MdEmail } from "react-icons/md";
-import { FaGithub, FaReddit, FaXbox } from "react-icons/fa";
+import { FaGithub, FaReddit, FaXbox, FaKey } from "react-icons/fa";
 import { SiRoblox } from "react-icons/si";
 import { TbBrandMinecraft } from "react-icons/tb";
 
@@ -39,6 +39,9 @@ export function Socials() {
             </SocialButton>
             <SocialButton location="/minecraft">
                 <TbBrandMinecraft className="icon" />
+            </SocialButton>
+            <SocialButton location="/keys">
+                <FaKey className="icon" />
             </SocialButton>
         </div>
     );

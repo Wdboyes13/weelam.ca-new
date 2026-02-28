@@ -1,0 +1,19 @@
+:root {
+  --color-primary: #4f8cff;
+  --color-secondary: #8b5cf6;
+  --color-bg: #242424;
+  --color-bg-element: #1a1a1a;
+  --color-text: #ccc;
+  --color-accent: #646cff;
+  --color-hover: #535bf2;
+
+  @media (prefers-color-scheme: light) {
+    --color-primary: #3b6fe0;
+    --color-secondary: #7c3aed;
+    --color-bg: #f4f5fb;
+    --color-bg-element: #ffffff;
+    --color-text: #1e1e2e;
+    --color-accent: #4f5de0;
+    --color-hover: #3d45c9;
+  }
+}

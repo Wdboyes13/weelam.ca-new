@@ -8,6 +8,7 @@ import License from "./mit_license";
 import App from "./main_site/App";
 import Minecraft from "./minecraft/mc";
 import MinecraftRules from "./minecraft/mc_rules";
+import Keyshare from "./keyshare/ks";
 
 const root = document.getElementById("root");
 
@@ -19,6 +20,7 @@ ReactDOM.createRoot(root).render(
                 <Route index element={<Minecraft />} />
                 <Route path="rules" element={<MinecraftRules />} />
             </Route>
+            <Route path="/keys" element={<Keyshare />} />
             <Route path="/site_license" element={<License />} />
         </Routes>
     </BrowserRouter>,

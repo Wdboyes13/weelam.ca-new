@@ -1,4 +1,4 @@
-@use '../vars' as *;
+@use '../colours' as *;
 
 button {
   border-radius: 8px;
@@ -7,7 +7,7 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: $color-bg-element;
+  background-color: var(--color-bg-element);
   cursor: pointer;
   transition: border-color 0.25s;
 
@@ -15,7 +15,7 @@ button {
   width: 100%;
 
   &:hover {
-      border-color: $color-accent;
+      border-color: var(--color-accent);
   }
 
   &:focus,
@@ -26,10 +26,10 @@ button {
 
 a {
   font-weight: 500;
-  color: $color-accent;
+  color: var(--color-accent);
   text-decoration: inherit;
 
   &:hover {
-      color: $color-hover;
+      color: var(--color-hover);
   }
 }

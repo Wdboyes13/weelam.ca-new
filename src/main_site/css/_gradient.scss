@@ -1,9 +1,11 @@
+@use '../../css/colours' as *;
+
 @mixin grad($clip: false) {
     background: linear-gradient(
         90deg,
-        #4f8cff,
-        #8b5cf6,
-        #4f8cff
+        var(--color-primary),
+        var(--color-secondary),
+        var(--color-primary)
     );
     will-change: background-position;
 
