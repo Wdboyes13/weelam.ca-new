@@ -1,7 +1,7 @@
 #!/bin/bash
 
 ARCHNAME="weelam.ca"
-SERVADDR="192.168.1.77"
+SERVADDR="192.168.1.67"
 
 npm i
 npx vite build
