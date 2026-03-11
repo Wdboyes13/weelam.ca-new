@@ -21,12 +21,14 @@ scene.add(sphere);
 
 camera.position.z = 20;
 
-(() => {
+function animate() {
     requestAnimationFrame(animate);
     sphere.rotation.x += 0.01;
     sphere.rotation.y += 0.01;
     renderer.render(scene, camera);
-})();
+}
+
+animate();
 
 window.addEventListener("resize", () => {
     renderer.setSize(window.innerWidth, window.innerHeight);
